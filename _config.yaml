@@ -1,0 +1,11 @@
+alarm_timed: '13:05'
+girlfriend_infos:
+  -
+    #女友微信昵称
+    wechat_name: '小骗子'
+    #女友所在桂林
+    city_name: '成都'
+    # 从那天开始认识的
+    start_date: '2018-05-20'
+    # 短句的最后留言
+    sweet_words: '来自最爱你的天才木瓜'
