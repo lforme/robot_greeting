@@ -28,7 +28,7 @@ class robot:
 
 
         alarm_timed = config.get('alarm_timed').strip()
-        init_msg = f"每天定时发送时间: {alarm_timed} \n"
+        init_msg = (f"每天定时发送时间: {alarm_timed} \n")
 
 
         girlfriend_list = []
@@ -43,8 +43,8 @@ class robot:
             girlfriend['city_code'] = city_code
             girlfriend_list.append(girlfriend)
 
-            print_msg = f"女朋友的微信昵称：{girlfriend.get('wechat_name')}\n\t女友所在城市名称：{girlfriend.get('city_name')}\n\t" \
-                f"在一起的第一天日期：{girlfriend.get('start_date')}\n\t最后一句为：{girlfriend.get('sweet_words')}\n"
+            print_msg = (f"女朋友的微信昵称：{girlfriend.get('wechat_name')}\n\t女友所在城市名称：{girlfriend.get('city_name')}\n\t" \
+                f"在一起的第一天日期：{girlfriend.get('start_date')}\n\t最后一句为：{girlfriend.get('sweet_words')}\n")
             init_msg += print_msg
 
 
@@ -185,23 +185,23 @@ class robot:
             high_c = high[high.find(' ') + 1:]
             low = today_weather.get('low')
             low_c = low[low.find(' ') + 1:]
-            temperature = f"温度 : {low_c}/{high_c}"
+            temperature = (f"温度 : {low_c}/{high_c}")
 
             # 风
             fx = today_weather.get('fx')
             fl = today_weather.get('fl')
-            wind = f"{fx} : {fl}"
+            wind = (f"{fx} : {fl}")
 
             # 空气指数
             aqi = today_weather.get('aqi')
-            aqi = f"空气 : {aqi}"
+            aqi = (f"空气 : {aqi}")
 
             # 在一起，一共多少天了
             start_datetime = datetime.strptime(start_date, "%Y-%m-%d")
             day_delta = (datetime.now() - start_datetime).days
-            delta_msg = f"宝贝这是我们在一起的第 {day_delta} 天"
+            delta_msg = (f"宝贝这是我们在一起的第 {day_delta} 天")
 
-            today_msg = f"{today_time}\n{delta_msg}。\n{notice}\n{temperature}\n{wind}\n{aqi}\n{dictum_msg}\n{sweet_words}\n"
+            today_msg = (f"{today_time}\n{delta_msg}。\n{notice}\n{temperature}\n{wind}\n{aqi}\n{dictum_msg}\n{sweet_words}\n")
             return today_msg
 
 
