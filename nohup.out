@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "run.py", line 2, in <module>
+    from greeting import robot
+  File "/home/why/robot_greeting/greeting.py", line 31
+    init_msg = f"每天定时发送时间：{alarm_timed}\n"
+                                         ^
+SyntaxError: invalid syntax
