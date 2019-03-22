@@ -28,7 +28,7 @@ class robot:
 
 
         alarm_timed = config.get('alarm_timed').strip()
-        init_msg = "每天定时发送时间:%s % (alarm_timed) \n"
+        init_msg = f"每天定时发送时间: {alarm_timed} \n"
 
 
         girlfriend_list = []
