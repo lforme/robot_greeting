@@ -18,7 +18,7 @@ class robot:
 
     def __init__(self):
         (self.girlfriend_list, self.alarm_hour, self.alarm_minute) = self.get_init_data()
-        locale.setlocale(locale.LC_CTYPE, 'chinese')
+        locale.setlocale(locale.LC_CTYPE, 'zh_CN.utf8')
 
 
     def get_init_data(self):
