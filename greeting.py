@@ -160,7 +160,7 @@ class robot:
         return every_msg
 
 
-    def get_weather_info(self, dictum_msg='', city_code='101270101', start_date='2018-05-20', sweet_words='----来自最爱你的天才木瓜'):
+    def get_weather_info(self, dictum_msg='', city_code='101270101', start_date='2018-05-20', sweet_words='来自最爱你的天才WHY'):
         '''
         获取天气信息。网址：https://www.sojson.com/blog/305.html
         :param dictum_msg: 发送给朋友的信息
@@ -201,7 +201,7 @@ class robot:
             day_delta = (datetime.now() - start_datetime).days
             delta_msg = f"宝贝这是我们在一起的第 {day_delta} 天"
 
-            today_msg = f"{today_time}\n{delta_msg}。\n{notice}\n{temperature}\n{wind}\n{aqi}\n{dictum_msg}\n{sweet_words}\n"
+            today_msg = f"{today_time}\n到你中午该吃饭的时间了！记得好好吃饭！好好喝水！遵守交通规则！\n{delta_msg}！\n{notice}\n{temperature}\n{wind}\n{aqi}\n{dictum_msg}\n{sweet_words}\n"
             return today_msg
 
 
